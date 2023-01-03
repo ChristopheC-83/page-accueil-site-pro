@@ -11,6 +11,7 @@ body {
   color: #161616;
   overflow-x: hidden;
   position: relative;
+  @include flexMid;
 
   
 }

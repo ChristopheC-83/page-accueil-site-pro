@@ -1,0 +1,23 @@
+.content-text {
+  color: #111;
+  @include flexMid;
+  flex-direction: column;
+  z-index: 100;
+  position: relative;
+
+  h1,
+  h2 {
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size:clamp(15px, calc(10px + 2.2vh), 3.3vh);
+    width: 100%;
+    @include flexMid;
+    flex-wrap: nowrap;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  h1{
+    font-size:clamp(20px, calc(12px + 2.7vh), 4vh)
+}
+}
