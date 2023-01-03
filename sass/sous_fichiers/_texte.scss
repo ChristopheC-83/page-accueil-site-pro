@@ -21,3 +21,16 @@
     font-size:clamp(20px, calc(12px + 2.7vh), 4vh)
 }
 }
+
+.text1{
+    transform: translateY(-50vh);
+    opacity:0.01
+}
+.text2{
+    transform: translateX(-200vw) translateY(-100px);
+    opacity:0.01
+}
+.text3{
+    transform: translateX(200vw);
+    opacity:0.01
+}

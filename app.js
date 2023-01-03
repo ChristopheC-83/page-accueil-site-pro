@@ -25,9 +25,23 @@ function openURL(url, time) {
 const TL = gsap.timeline()
 
 TL
-.to (img1, {x:0, duration:1.5, left:0, scale:1, opacity:1})
-.to (img2, {x:0, duration:1.5, left:0, scale:1, opacity:1}, ">-0.5")
-.to (img3, {x:0, duration:1.5, left:0, scale:1, opacity:1}, ">-0.5")
+.to (img1, {x:0, duration:1.5, left:0, scale:1, opacity:1, ease: "power4.out"})
+.to (img2, {x:0, duration:1.5, left:0, scale:1, opacity:1, ease: "power4.out"}, ">-0.5")
+.to (img3, {x:0, duration:1.5, left:0, scale:1, opacity:1, ease: "power4.out"}, ">-0.5")
 .to(overlay, {opacity:0.5, duration:1.5}, ">-0.5")
-
+.to(text2, {x:0, opacity:1, duration:1.25, ease: "back.out(1.25)"})
+.to(text3, {x:0, opacity:1, duration:1.25, ease: "back.out(1.25)"})
+.to(text1, {y:0, opacity:1, duration:1.25, ease: "back.out(1.7)"})
+.to(text2, {y:0, opacity:1, duration:0.5}, ">-0.95")
+.addLabel("end")
+  .call(() => {
+    gsap.to(document.body, {
+      opacity: 0,
+      duration: 1,
+      ease: "power2.inOut",
+    });
+  }, null, "end")
+  .call(() => {
+    openURL("https://christophe-cuisine.vercel.app/", 1000)
+  });
 TL.play()
