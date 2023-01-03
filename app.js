@@ -20,4 +20,4 @@ function openURL(url, time) {
     }, time);
   }
 
-  openURL("https://christophe-cuisine.vercel.app/", 1000)
+//   openURL("https://christophe-cuisine.vercel.app/", 1000)
