@@ -103,6 +103,14 @@ img {
   opacity: 0.01;
 }
 
+@media only screen and (max-width: 768px) {
+  .container-images {
+    height: 80vh;
+    max-height: 80vh;
+    width: 90%;
+    max-width: 40vh;
+  }
+}
 .content-text {
   color: #111;
   display: flex;
@@ -144,6 +152,17 @@ img {
   opacity: 0.01;
 }
 
+@media only screen and (max-width: 768px) {
+  .content-text {
+    transform: translateY(-10vh);
+  }
+  .content-text h1 {
+    font-size: clamp(20px, 12px + 2.1vh, 3.2vh);
+  }
+  .content-text h2 {
+    font-size: clamp(15px, 10px + 1.8vh, 2.6vh);
+  }
+}
 body {
   min-height: 100vh;
   width: 100%;

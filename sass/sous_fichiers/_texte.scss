@@ -34,3 +34,18 @@
     transform: translateX(200vw);
     opacity:0.01
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .content-text {
+
+        transform: translateY(-10vh);
+
+      h1 {
+        font-size: clamp(20px, calc(12px + 2.1vh), 3.2vh);
+      }
+      h2 {
+        font-size: clamp(15px, calc(10px + 1.8vh), 2.6vh);
+      }
+    }
+  }
