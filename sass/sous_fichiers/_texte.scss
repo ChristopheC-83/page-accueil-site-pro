@@ -35,6 +35,12 @@
     opacity:0.01
 }
 
+.transparent{
+    color:#fff;
+    position: absolute;
+    z-index: 0;
+}
+
 @media only screen and (max-width: 768px) {
     
     .content-text {
